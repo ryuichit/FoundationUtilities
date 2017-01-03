@@ -1,5 +1,5 @@
 PODS:
-  - FoundationUtilities (0.0.1):
+  - FoundationUtilities (0.0.2):
     - swift-utilities (~> 0.1.0)
   - swift-utilities (0.1.2)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FoundationUtilities: 8e90a41e8d1566a1818775880968988b612067e0
+  FoundationUtilities: 5dfc86bc5302454eaed1e2d453ebe41d7e382446
   swift-utilities: f21ceb4c3acda1654acdd9f78ed52348939d6eb4
 
 PODFILE CHECKSUM: 6b4f7309fe6e261c31801369dc6e1369bc6d1b47

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FoundationUtilities'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.author           = { 'ryuichi' => 'loyd.ryut@gmail.com' }
   s.license          = { :type => 'GPL', :file => 'LICENSE' }
   s.homepage         = "https://github.com/RyuichiTanimoto/#{s.name}"

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FoundationUtilities
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let url = URL(string: "https://hoge")!
+        let request = URLRequest(url: url)
+        let result = URLSession(configuration: .default).synchronousDataTask(with: request)
+        if let e = result.error {
+            print("NG")
+            print(e)
+        } else {
+            print("OK")
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
