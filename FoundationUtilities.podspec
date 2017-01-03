@@ -8,35 +8,19 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FoundationUtilities'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FoundationUtilities.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/FoundationUtilities'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'RyuichiTanimoto' => 'ryuichi.tanimoto@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/FoundationUtilities.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.version          = '0.0.1'
+  s.author           = { 'ryuichi' => 'loyd.ryut@gmail.com' }
+  s.license          = { :type => 'GPL', :file => 'LICENSE' }
+  s.homepage         = "https://github.com/RyuichiTanimoto/#{s.name}"
+  s.source           = { :git => "#{s.homepage}.git", :tag => s.version.to_s }
+  s.summary          = 'A collection of extensions in Foundation.'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FoundationUtilities/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'FoundationUtilities' => ['FoundationUtilities/Assets/*.png']
-  # }
+  s.dependency 'swift-utilities', '~> 0.1.0'
+  s.requires_arc     = true # default value
+  s.frameworks       = 'Foundation'
+  s.xcconfig         = { :SWIFT_VERSION => '3.0' }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files     = "#{s.name}/Classes/**/*"
 end
