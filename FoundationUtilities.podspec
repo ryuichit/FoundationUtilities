@@ -9,6 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FoundationUtilities'
   s.version          = '0.0.2'
+  s.swift_versions   = '4.2'
   s.author           = { 'ryuichi' => 'loyd.ryut@gmail.com' }
   s.license          = { :type => 'GPL', :file => 'LICENSE' }
   s.homepage         = "https://github.com/RyuichiTanimoto/#{s.name}"
@@ -20,7 +21,7 @@ Pod::Spec.new do |s|
   s.dependency 'swift-utilities', '~> 0.1.0'
   s.requires_arc     = true # default value
   s.frameworks       = 'Foundation'
-  s.xcconfig         = { :SWIFT_VERSION => '3.0' }
+  s.xcconfig         = { :SWIFT_VERSION => '4.2' }
 
   s.source_files     = "#{s.name}/Classes/**/*"
 end
