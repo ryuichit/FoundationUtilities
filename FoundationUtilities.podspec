@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.dependency 'swift-utilities', '~> 0.1.0'
+  s.dependency 'swift-utilities', '~> 0.2.0'
   s.requires_arc     = true # default value
   s.frameworks       = 'Foundation'
   s.xcconfig         = { :SWIFT_VERSION => '4.2' }
